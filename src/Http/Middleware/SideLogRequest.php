@@ -14,6 +14,7 @@ class SideLogRequest
 
 		JsonRpcClient::notify('log', [
 			'url' => $request->fullUrl(),
+            'date' => date('Y-m-d H:i:s'),
 		]);
 
 		return $response;
