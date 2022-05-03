@@ -1,0 +1,22 @@
+{
+    "name": "vladi/landing",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Vladi\\Landing\\": "src/"
+        }
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Vladi\\Landing\\LogActivityServiceProvider"
+            ],
+            "aliases": {
+                "JsonRpcResponse": "Vladi\\Landing\\Facades\\JsonRpcClient"
+            }
+        }
+    }
+}
